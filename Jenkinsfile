@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Construir imagen') {
             steps {
-                sh 'docker build hello-word:latest .'
+                sh 'docker build -t hello-word:latest .'
             }
         }
         stage('subir imagen') {
